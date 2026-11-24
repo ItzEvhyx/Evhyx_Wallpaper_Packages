@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Evhyx Wallpaper Packages</h1>
-  <p><strong>A personal, curated collection of static & live wallpapers.</strong><br>Organized in modular numbered packs for Wayland, Hyprland, and custom desktop setups.</p>
+  <p><strong>A personal, curated collection of 112 static & live wallpapers.</strong><br>Organized in modular numbered packs for Wayland, Hyprland, and custom desktop setups.</p>
   <p><a href="#overview">Overview</a> &nbsp; / &nbsp; <a href="#preview">Preview</a> &nbsp; / &nbsp; <a href="#repository-structure">Structure</a> &nbsp; / &nbsp; <a href="#naming-convention">Naming Convention</a> &nbsp; / &nbsp; <a href="#usage">Usage</a></p>
 </div>
 
@@ -10,7 +10,11 @@
 
 **A tailored wallpaper collection built for desktop personalization**
 
-This repository contains a curated personal collection of wallpapers for desktop environments, tailored for Wayland and Hyprland configurations (such as [EvhOS](https://github.com/ItzEvhyx/EvhOS-Shell)). It brings together high-definition static wallpapers organized into numbered image packs and smooth animated live wallpapers (MP4 loops), ready for automated selectors, wallpaper switchers, or manual selection.
+This repository contains a curated personal collection of wallpapers for desktop environments, tailored for Wayland and Hyprland configurations (such as [EvhOS](https://github.com/ItzEvhyx/EvhOS-Shell)). It features **112 wallpapers** in total:
+* **100 static wallpapers** across 5 complete image packs (20 wallpapers each) in high-definition PNG format.
+* **12 live wallpapers** in Live Pack 1 as seamless MP4 video loops.
+
+Ready for automated selectors, dynamic wallpaper switchers, or manual selection.
 
 ## Preview
 
@@ -28,7 +32,7 @@ A sample selection of wallpapers from across the collection:
 | Atmospheric scenery & nature backgrounds. | High-energy gaming & modern wallpapers. |
 
 > [!NOTE]
-> Looping live/video wallpapers are stored in the [`Videos/`](Videos/) directory as `.mp4` video files.
+> Live Pack 1 contains **12 looping video wallpapers** stored in the [`Videos/`](Videos/) directory as `.mp4` video files.
 
 ## Repository Structure
 
@@ -37,14 +41,15 @@ The repository separates static image backgrounds from looping video wallpapers 
 ```text
 Evhyx_Wallpaper_Packages/
 ├── Pictures/    <-- 100 static wallpapers (Packs 1 to 5)
-├── Videos/      <-- 8 live wallpapers (MP4 video loops)
+├── Videos/      <-- 12 live wallpapers (MP4 video loops)
 └── README.md
 ```
 
 | Directory | Type | Content | Total Items |
 | :--- | :--- | :--- | :---: |
 | **`Pictures/`** | Static Wallpapers (`.png`) | High-resolution image packs 1 through 5 | 100 images |
-| **`Videos/`** | Live Wallpapers (`.mp4`) | Looping video wallpapers | 8 videos |
+| **`Videos/`** | Live Wallpapers (`.mp4`) | Looping video wallpapers | 12 videos |
+| **Total** | — | — | **112 wallpapers** |
 
 ### Breakdown by Pack
 
@@ -55,7 +60,8 @@ Evhyx_Wallpaper_Packages/
 | **Image Pack 3** | Static Wallpaper | PNG | 20 | `wallpaper_imagepack3_1.png` – `wallpaper_imagepack3_20.png` |
 | **Image Pack 4** | Static Wallpaper | PNG | 20 | `wallpaper_imagepack4_1.png` – `wallpaper_imagepack4_20.png` |
 | **Image Pack 5** | Static Wallpaper | PNG | 20 | `wallpaper_imagepack5_1.png` – `wallpaper_imagepack5_20.png` |
-| **Live Pack 1**  | Live Wallpaper   | MP4 | 8  | `livewallpaper_lwpack1_1.mp4` – `livewallpaper_lwpack1_8.mp4` |
+| **Live Pack 1**  | Live Wallpaper   | MP4 | 12 | `livewallpaper_lwpack1_1.mp4` – `livewallpaper_lwpack1_12.mp4` |
+| **Total**        | —                | —   | **112** | **5 Image Packs & 1 Live Pack** |
 
 ## Naming Convention
 
