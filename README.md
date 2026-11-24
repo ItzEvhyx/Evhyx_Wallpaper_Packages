@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Evhyx Wallpaper Packages</h1>
-  <p><strong>A personal, curated collection of 112 static & live wallpapers.</strong><br>Organized in modular numbered packs for Wayland, Hyprland, and custom desktop setups.</p>
+  <p><strong>A curated collection of 112 static & live wallpapers.</strong><br>A generic wallpaper package organized into numbered packs for any desktop setup.</p>
   <p><a href="#overview">Overview</a> &nbsp; / &nbsp; <a href="#preview">Preview</a> &nbsp; / &nbsp; <a href="#repository-structure">Structure</a> &nbsp; / &nbsp; <a href="#naming-convention">Naming Convention</a> &nbsp; / &nbsp; <a href="#usage">Usage</a></p>
 </div>
 
@@ -8,13 +8,13 @@
 
 ## Overview
 
-**A tailored wallpaper collection built for desktop personalization**
+**A curated wallpaper package ready for any desktop**
 
-This repository contains a curated personal collection of wallpapers for desktop environments, tailored for Wayland and Hyprland configurations (such as [EvhOS](https://github.com/ItzEvhyx/EvhOS-Shell)). It features **112 wallpapers** in total:
+This repository is a generic wallpaper collection containing **112 wallpapers** in total:
 * **100 static wallpapers** across 5 complete image packs (20 wallpapers each) in high-definition PNG format.
 * **12 live wallpapers** in Live Pack 1 as seamless MP4 video loops.
 
-Ready for automated selectors, dynamic wallpaper switchers, or manual selection.
+Simply clone the repository to any folder on your machine (such as your `Downloads` or `Pictures` folder), and all wallpaper assets are immediately available to use with your preferred desktop settings or wallpaper application.
 
 ## Preview
 
@@ -36,7 +36,7 @@ A sample selection of wallpapers from across the collection:
 
 ## Repository Structure
 
-The repository separates static image backgrounds from looping video wallpapers to make integration seamless for wallpaper daemons:
+The repository separates static image backgrounds from looping video wallpapers into dedicated folders:
 
 ```text
 Evhyx_Wallpaper_Packages/
@@ -65,7 +65,7 @@ Evhyx_Wallpaper_Packages/
 
 ## Naming Convention
 
-All wallpapers follow a uniform, index-based naming scheme tailored for shell scripts, CLI tools, and dynamic launchers (e.g. `rofi`, `fuzzel`, `wofi`, `quickshell`):
+All wallpapers follow a uniform, index-based naming scheme for clean organization and easy browsing:
 
 * **Static Wallpapers**: `wallpaper_imagepack<package-num>_<image-num>.png`
   * Example: `Pictures/wallpaper_imagepack3_1.png`
@@ -73,42 +73,21 @@ All wallpapers follow a uniform, index-based naming scheme tailored for shell sc
 * **Live Wallpapers**: `livewallpaper_lwpack<package-num>_<video-num>.mp4`
   * Example: `Videos/livewallpaper_lwpack1_1.mp4`
 
-## Usage
+## Usage / Getting Started
 
-These wallpapers can be integrated with various Wayland and X11 wallpaper managers:
-
-### 1. Static Wallpapers (`swww` / `hyprpaper`)
-
-**Using `swww`:**
-```sh
-# Set a static wallpaper with a smooth transition
-swww img Pictures/wallpaper_imagepack1_1.png --transition-type wipe --transition-duration 2
-```
-
-**Using `hyprpaper`:**
-```conf
-# Inside hyprpaper.conf
-preload = ~/Pictures/Wallpapers/Pictures/wallpaper_imagepack1_1.png
-wallpaper = ,~/Pictures/Wallpapers/Pictures/wallpaper_imagepack1_1.png
-```
-
-### 2. Live Wallpapers (`mpvpaper`)
-
-**Using `mpvpaper`:**
-```sh
-# Play a seamless video loop on a monitor (e.g. eDP-1)
-mpvpaper -o "no-audio --loop" eDP-1 Videos/livewallpaper_lwpack1_1.mp4
-```
-
-### 3. Random Wallpaper Selector Script
-
-A simple script to randomly select and apply a static wallpaper:
+Clone the repository to any directory of your choice (for example, into your `Downloads` or `Pictures` folder):
 
 ```sh
-#!/usr/bin/env bash
-WALLPAPER_DIR="$HOME/Pictures/Wallpapers/Pictures"
-RANDOM_WALLPAPER=$(find "$WALLPAPER_DIR" -type f -name "*.png" | shuf -n 1)
+# Navigate to your desired location (e.g., Downloads)
+cd ~/Downloads
 
-swww img "$RANDOM_WALLPAPER" --transition-type fade
+# Clone the repository
+git clone https://github.com/ItzEvhyx/Evhyx_Wallpaper_Packages.git
 ```
+
+Once cloned, open the repository folder:
+* **`Pictures/`** contains all 100 static wallpapers across Packs 1 to 5.
+* **`Videos/`** contains all 12 animated live wallpapers in MP4 format.
+
+From there, you can apply any wallpaper using your operating system's native background settings, or with whatever wallpaper manager you prefer.
 
