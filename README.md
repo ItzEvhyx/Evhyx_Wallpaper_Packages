@@ -105,3 +105,4 @@ RANDOM_WALLPAPER=$(find "$WALLPAPER_DIR" -type f -name "*.png" | shuf -n 1)
 
 swww img "$RANDOM_WALLPAPER" --transition-type fade
 ```
+
